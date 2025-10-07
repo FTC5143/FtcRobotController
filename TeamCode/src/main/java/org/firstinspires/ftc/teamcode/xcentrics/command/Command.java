@@ -1,5 +1,10 @@
 package org.firstinspires.ftc.teamcode.xcentrics.command;
 
+import org.firstinspires.ftc.teamcode.xcentrics.componet.Component;
+
+import java.util.Collections;
+import java.util.Set;
+
 /**
  * The command interface is made to provide all the functionality of the command
  * @author Alex Stephens - 5143
@@ -10,9 +15,7 @@ public interface Command {
     /**
      * The init method is run when the command is first called from the kernal class
      */
-    public default command(){
-
-    }
+    Set<Component> requierments;
     default void init(){
     }
 
